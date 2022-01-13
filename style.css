@@ -8,12 +8,15 @@ body{
 }
 main{
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-.conainer{
+.container{
     background-color: #FFFFFF;
     width: 870px;
     padding: 30px;
+    margin-top: 21px;
+    border-radius: 5px;
 }
 
 /* top-players style */
@@ -46,11 +49,17 @@ main{
 }
 hr{
     border: 1px solid #D1D1D1;
+    margin-bottom: 27px;
 }
 
 /* ---------------------
 Top Bogs Styles  
 ----------------------*/
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+}
 .blog{
     display: flex;
 }
