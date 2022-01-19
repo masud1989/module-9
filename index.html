@@ -4,95 +4,163 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leader Board</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Bootstrap-Leaderboard</title>
+    <link rel="stylesheet" href="bootstrap-5/css/bootstrap.min.css">
 </head>
-<body>
-    <!-- header starts -->
+<body style="background-color: #c7c6cf;">
     <header>
-
-    </header>
-     <!-- header ends -->
-     <!-- top-players and top blogs -->
-     <main>
-        <section class="container">
-           <div class="top-players">
-             <h2 class="section-title">Top Players</h2>
-               <div class="players">
-                   <div class="player">
-                       <img src="images/players/player-1.png" alt="">
-                       <h3 class="player-name" class="section-title">Top Player-1</h3>
-                   </div>
-                   <div class="player">
-                       <img src="images/players/player-2.png" alt="">
-                       <h3 class="player-name">Top Player-2</h3>
-                   </div>
-                   <div class="player">
-                       <img src="images/players/player-3.png" alt="">
-                       <h3 class="player-name">Top Player-3</h3>
-                   </div>
-                   <div class="player">
-                       <img src="images/players/player-4.png" alt="">
-                       <h3 class="player-name">Top Player-4</h3>
-                   </div>
-                   <div class="player">
-                       <img src="images/players/player-5.png" alt="">
-                       <h3 class="player-name">Top Player-5</h3>
-                   </div>
-                   <div class="player">
-                       <img src="images/players/player-6.png" alt="">
-                       <h3 class="player-name">Top Player-6</h3>
-                   </div>
-               </div>
-           </div>
-           <hr>
-           <div class="top-blogs">
-               <h2 class="section-title">Top Blog</h2>
-              <div class="blogs">
-                <article class="blog">
-                    <div class="thumbnail">
-                        <img src="images/blogs/blog-1.png" alt="">
-                    </div>
-                    <div class="blog-info">
-                        <h3>13 of My Favourite UI/UX Goodies</h3>
-                        <p class="blog-author">By <a href="">Dany Dany</a></p>
-                    </div>
-               </article>
-               <article class="blog">
-                    <div class="thumbnail">
-                        <img src="images/blogs/blog-2.png" alt="">
-                    </div>
-                    <div class="blog-info">
-                        <h3>13 of My Favourite UI/UX Goodies</h3>
-                        <p class="blog-author">By <a href="">Dany Dany</a></p>
-                    </div>
-               </article>
-               <article class="blog">
-                    <div class="thumbnail">
-                        <img src="images/blogs/blog-3.png" alt="">
-                    </div>
-                    <div class="blog-info">
-                        <h3>13 of My Favourite UI/UX Goodies</h3>
-                        <p class="blog-author">By <a href="">Dany Dany</a></p>
-                    </div>
-               </article>
-               <article class="blog">
-                    <div class="thumbnail">
-                        <img src="images/blogs/blog-4.png" alt="">
-                    </div>
-                    <div class="blog-info">
-                        <h3>13 of My Favourite UI/UX Goodies</h3>
-                        <p class="blog-author">By <a href="">Dany Dany</a></p>
-                    </div>
-               </article>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #562eff;">
+            <div class="container">
+              <a class="navbar-brand d-flex align-items-center" href="#"> <img src="images/logos/logo-2.png" alt="" width="51" height="51" class="d-inline-block align-text-top">
+               <span class="ms-3">Idea</span></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About1</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About2</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Works</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <img src="images/logos/proile-pic.png" alt="" width="51" height="51" class="d-inline-block align-text-top">
+                    </a>
+                </ul>
               </div>
-           </div>
-        </section>
-        <!-- Latest Courses -->
-        <section class="container">
-            <h2 class="section-title">Latest Courses Here</h2>
-        </section>
-     </main>
+            </div>
+          </nav>
+    </header>
 
+    <main>
+        <section class="container bg-white rounded pb-1">
+            <div>
+                <h4 class="text-primary my-4">Top Players</h4>
+                <div class="row gy-4">
+                    <div class="col-12 col-md-6 col-lg-4 d-flex align-items-center">
+                        <img width="56px"  src="images/players/player-1.png" alt="">
+                        <h5 class="ms-3">Mr. Rubel</h5>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 d-flex align-items-center">
+                        <img width="56px"  src="images/players/player-2.png" alt="">
+                        <h5 class="ms-3">Mr. Hasan</h5>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 d-flex align-items-center">
+                        <img width="56px"  src="images/players/player-3.png" alt="">
+                        <h5 class="ms-3">Mr. Sumon</h5>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 d-flex align-items-center">
+                        <img width="56px"  src="images/players/player-4.png" alt="">
+                        <h5 class="ms-3">Mr. Rubel</h5>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 d-flex align-items-center">
+                        <img width="56px"  src="images/players/player-5.png" alt="">
+                        <h5 class="ms-3">Mr. Hasan</h5>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 d-flex align-items-center">
+                        <img width="56px"  src="images/players/player-6.png" alt="">
+                        <h5 class="ms-3">Mr. Sumon</h5>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!--Top Blog Part Start-->
+            <div>
+                <h4 class="text-primary my-4 gy-4">Top Blogs</h4>
+                <div class="row g-4">
+                    <!-- single blog -->
+                    <div class="col-md-12 col-lg-6 d-flex">
+                        <img width="177px" src="images/blogs/blog-1.png" alt="">
+                        <div class="ps-4">
+                            <h4>13 of My Favourite
+                                UI/UX Gooies
+                            </h4>
+                            <p>By <a href="">Dany Sapio</a></p>
+                        </div>
+                    </div>
+                    <!-- single blog -->
+                    <div class="col-md-12 col-lg-6 d-flex">
+                        <img width="177px" src="images/blogs/blog-2.png" alt="">
+                        <div class="ps-4">
+                            <h4>13 of My Favourite
+                                UI/UX Gooies
+                            </h4>
+                            <p>By <a href="">Dany Sapio</a></p>
+                        </div>
+                    </div>
+                    <!-- single blog -->
+                    <div class="col-md-12 col-lg-6 d-flex">
+                        <img width="177px" src="images/blogs/blog-3.png" alt="">
+                        <div class="ps-4">
+                            <h4>13 of My Favourite
+                                UI/UX Gooies
+                            </h4>
+                            <p>By <a href="">Dany Sapio</a></p>
+                        </div>
+                    </div>
+                    <!-- single blog -->
+                    <div class="col-md-12 col-lg-6 d-flex">
+                        <img width="177px" src="images/blogs/blog-4.png" alt="">
+                        <div class="ps-4">
+                            <h4>13 of My Favourite
+                                UI/UX Gooies
+                            </h4>
+                            <p>By <a href="">Dany Sapio</a></p>
+                        </div>
+                    </div>
+                    <!-- single blog -->
+                </div>
+            </div>
+        </section>
+        <section class="container bg-white rounded pb-1">
+            <div>
+                <h3 class="text-primary my-4 gy-4">Latest Course</h3>
+                <!-- <div class="d-flex"> -->
+                    <div class="row d-flex">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="row">
+                                <img width="320px" src="images/courses/Group 2.png" alt="" srcset="">
+                                <h4>The Complete Course-2</h4>
+                                <h5 class="text-danger">Trainer Name-2</h5>
+                            </div>
+                            <div class="row d">
+                                <div class="col-lg-4">***</div>
+                                <div class="col-lg-4">4.5</div>
+                                <div class="col-lg-4"><span class="bg-danger rounded"><i></i> 45 Hrs</span></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <img width="320px" src="images/courses/Mask Group-3.png" alt="" srcset="">
+                            <h4 class="text-danger">The Complete Course-2</h4>
+                            <h5>Trainer Name-2</h5>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <img width="320px" src="images/courses/Mask Group-4.png" alt="" srcset="">
+                            <h4 class="text-danger">The Complete Course-2</h4>
+                            <h5>Trainer Name-2</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="bootstrap-5/js/bootstrap.bundle.js"></script>
 </body>
 </html>
